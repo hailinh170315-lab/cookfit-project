@@ -10,11 +10,11 @@ import Header from "../components/Header";
 const HomePage = () => {
     return (
         <div className="w-full h-screen flex flex-col items-center bg-gradient-to-r from-yellow-300 to-orange-400 ">
-            <div className="w-full">
+            {/* <div className="w-full">
                 <Header />
-            </div>
+            </div> */}
 
-            <div className="w-14 mt-[100px] h-14 bg-yellow-100 text-white flex items-center justify-center rounded-full">
+            <div className="w-14 mt-[80px] h-14 bg-yellow-100 text-white flex items-center justify-center rounded-full">
                 <div className="animate-bounce-slow">
                     <LuBell fontSize={2} color="#fff" size={30}/>
                 </div>
