@@ -1,11 +1,11 @@
 import { GoPerson } from "react-icons/go";
+import { SiSharp } from "react-icons/si";
+import { RiBookOpenLine } from "react-icons/ri";
 import { GoArrowLeft } from "react-icons/go";
 import { FaPencilAlt } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
-import { FiLock } from "react-icons/fi";
 
-const Login = () => {
-  return (
+const ExamStart = () => {
+    return (
         <div className="w-full h-screen flex items-center justify-center bg-gradient-to-r from-yellow-300 to-orange-400 ">
             <input 
             type="text" 
@@ -18,16 +18,47 @@ const Login = () => {
             <div className="w-[400px] bg-white flex flex-col rounded-xl shadow-2xl ">
                 <div className="flex flex-col items-center justify-center">
                     <div className="w-14 mt-10 h-14 bg-yellow-300 text-white flex items-center justify-center rounded-full">
-                        <FiLock fontSize={2} size={30}/>
+                        <GoPerson fontSize={2} size={30}/>
                     </div>
-                    <p className=" mt-3 mb-1 font-bold text-[30px] text-black">Admin Login</p>
-                    <p className=" text-[15px] text-gray-600 mb-6">Đăng nhập với quyền quản trị</p>
+                    <p className=" mt-3 mb-1 font-bold text-[30px] text-black">Thông Tin Sinh Viên</p>
+                    <p className=" text-[15px] text-gray-600 mb-6">Nhập thông tin để tham gia thi</p>
                 </div>
                 <div className="flex w-[350px] flex-col ml-6">
+                    <p className="mb-1 font-medium">Họ và tên</p>
+                    <div className="flex items-center border border-gray-300 rounded-lg px-3 py-2 w-[350px] bg-white mb-6">
+                        <GoPerson size={20} className="text-gray-400 mr-2" />
+                        <input
+                            type="text"
+                            placeholder="Nguyễn Văn A"
+                            className="outline-none w-full placeholder-gray-400"
+                        />
+                    </div>
+                    <p className="mb-1 font-medium">Mã sinh viên</p>
+                    <div>
+                        <div className="flex items-center border border-gray-300 rounded-lg px-3 py-2 w-[350px] bg-white mb-6">
+                        <SiSharp size={20} className="text-gray-400 mr-2" />
+                        <input
+                            type="text"
+                            placeholder="BT12345"
+                            className="outline-none w-full placeholder-gray-400"
+                        />
+                        </div>
+                    </div>
+                    <p className="mb-1 font-medium">Lớp học</p>
+                    <div>
+                        <div className="flex items-center border border-gray-300 rounded-lg px-3 py-2 w-[350px] bg-white mb-6">
+                        <RiBookOpenLine size={20} className="text-gray-400 mr-2" />
+                        <input
+                            type="text"
+                            placeholder="CNTT01"
+                            className="outline-none w-full placeholder-gray-400"
+                        />
+                        </div>
+                    </div>
                     <p className="mb-1 font-medium">Email</p>
                     <div>
                         <div className="flex items-center border border-gray-300 rounded-lg px-3 py-2 w-[350px] bg-white mb-6">
-                        <FiMail size={20} className="text-gray-400 mr-2" />
+                        <RiBookOpenLine size={20} className="text-gray-400 mr-2" />
                         <input
                             type="text"
                             placeholder="student@btec.edu.vn"
@@ -35,21 +66,8 @@ const Login = () => {
                         />
                         </div>
                     </div>
-
-                    <p className="mb-1 font-medium">Mật khẩu</p>
-                    <div>
-                        <div className="flex items-center border border-gray-300 rounded-lg px-3 py-2 w-[350px] bg-white mb-6">
-                        <FiLock size={20} className="text-gray-400 mr-2" />
-                        <input
-                            type="text"
-                            placeholder="A123456a@"
-                            className="outline-none w-full placeholder-gray-400"
-                        />
-                        </div>
-                    </div>
-
                     <button className="flex flex-col h-10 mb-5 text-white font-bold items-center justify-center bg-gradient-to-r from-yellow-400 to-orange-500 rounded-l rounded-r  shadow-md">
-                        Đăng nhập
+                        Vào thi
                     </button>
                     <button className="font-medium flex flex-row items-center justify-center mb-10">
                         <GoArrowLeft size={20} className="text-gray-700 mr-2" />Quay lại trang chủ
@@ -57,7 +75,7 @@ const Login = () => {
                 </div>
             </div> 
         </div>
-      )
+    )
 }
 
-export default Login
+export default ExamStart
