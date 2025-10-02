@@ -6,18 +6,18 @@ import { FiTrash2 } from "react-icons/fi";
 const Management = () => {
   return (
     <div>
-        <div className="w-full h-screen flex flex-col bg-gradient-to-r from-gray-200 to-gray-300">
+        <div className="w-full h-fullscreen md:min-h-screen flex flex-col bg-gradient-to-r from-gray-200 to-gray-300">
             <Header />
 
             <div className="flex flex-col items-center justify-center">
                 <div className="w-[1300px] h-14 mt-10 flex items-center justify-center text-gray-700 bg-white rounded-xl">
-                    <div  className="w[600px] h-auto flex items-center justify-center">
-                        <button className="mr-60">
+                    <div className="w-[600px] h-auto flex items-center justify-center">
+                        <button className="w-[600px]">
                             Tổng quan
                         </button>
                     </div>
-                    <div>
-                        <button className="w[600px] ml-60">
+                    <div className="w-[600px] h-auto flex items-center justify-center">
+                        <button className="w-[600px]">
                             Quản lý đề thi
                         </button>
                     </div>

@@ -6,16 +6,16 @@ import { FiLock } from "react-icons/fi";
 
 const Login = () => {
   return (
-        <div className="w-full h-screen flex items-center justify-center bg-gradient-to-r from-yellow-300 to-orange-400 ">
-            <input 
+        <div className="w-full h-fullscreen md:min-h-screen flex items-center justify-center bg-gradient-to-r from-yellow-300 to-orange-400 ">
+            {/* <input 
             type="text" 
             placeholder="  Trò chuyện:"
             className="fixed top-20 right-16 outline-none w-[200px] h-8 bg-black placeholder-white rounded-l rounded-r shadow-2xl"
             />
             <button className="fixed bottom-4 left-24 w-14 mt-[70px] h-14 bg-black text-green-500 flex items-center justify-center rounded-full shadow-2xl">
                 <FaPencilAlt size={25} />
-            </button>
-            <div className="w-[400px] bg-white flex flex-col rounded-xl shadow-2xl ">
+            </button> */}
+            <div className="w-[400px] mt-[210px] md:mt-0 mb-[210px] md:mb-0 bg-white flex flex-col rounded-xl shadow-2xl ">
                 <div className="flex flex-col items-center justify-center">
                     <div className="w-14 mt-10 h-14 bg-yellow-300 text-white flex items-center justify-center rounded-full">
                         <FiLock fontSize={2} size={30}/>

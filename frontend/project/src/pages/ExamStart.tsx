@@ -6,13 +6,13 @@ import { FaPencilAlt } from "react-icons/fa";
 
 const ExamStart = () => {
     return (
-        <div className="w-full h-screen flex items-center justify-center bg-gradient-to-r from-yellow-300 to-orange-400 ">
+        <div className="w-full h-fullscreen md:min-h-screen flex items-center justify-center bg-gradient-to-r from-yellow-300 to-orange-400 ">
             <input 
             type="text" 
             placeholder="  Trò chuyện:"
-            className="fixed top-20 right-16 outline-none w-[200px] h-8 bg-black placeholder-white rounded-l rounded-r shadow-2xl"
+            className="fixed top-10 md:top-20 right-4 md:right-16 outline-none w-[200px] h-8 bg-black placeholder-white rounded-l rounded-r shadow-2xl"
             />
-            <button className="fixed bottom-4 left-24 w-14 mt-[70px] h-14 bg-black text-green-500 flex items-center justify-center rounded-full shadow-2xl">
+            <button className="fixed bottom-4 md:bottom-4 left-6 md:left-24 w-14 mt-[70px] h-14 bg-black text-green-500 flex items-center justify-center rounded-full shadow-2xl">
                 <FaPencilAlt size={25} />
             </button>
             <div className="w-[400px] bg-white flex flex-col rounded-xl shadow-2xl ">
